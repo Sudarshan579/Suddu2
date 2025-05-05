@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>College Portal Dashboard</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f8;
+      color: #333;
+    }
+
+    header {
+      background-color: #1a237e;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+    }
+
+    nav {
+      background-color: #3949ab;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .dashboard {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h3 {
+      margin-bottom: 10px;
+      color: #1a237e;
+    }
+
+    .card-content p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #e0e0e0;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>College Portal Dashboard</h1>
+    <div>Welcome, Student Name</div>
+  </header>
+
+  <nav>
+    <a href="suhome.html">Home</a>
+    <a href="#">Courses</a>
+    <a href="#">Grades</a>
+    <a href="#">Messages</a>
+    <a href="#">Logout</a>
+  </nav>
+
+  <section class="dashboard">
+    <div class="card">
+      <img src="https://via.placeholder.com/400x150.png?text=Courses" alt="Courses" />
+      <div class="card-content">
+        <h3>My Courses</h3>
+        <p>Access and manage your registered courses, lecture materials, and assignments.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/400x150.png?text=Grades" alt="Grades" />
+      <div class="card-content">
+        <h3>Grades</h3>
+        <p>View your academic performance, semester-wise grades, and GPA.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/400x150.png?text=Schedule" alt="Schedule" />
+      <div class="card-content">
+        <h3>Schedule</h3>
+        <p>Check your weekly class schedule, exam timetable, and important deadlines.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/400x150.png?text=Faculty" alt="Faculty" />
+      <div class="card-content">
+        <h3>Faculty Directory</h3>
+        <p>Connect with professors, advisors, and department contacts.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/400x150.png?text=Notices" alt="Notices" />
+      <div class="card-content">
+        <h3>Campus Notices</h3>
+        <p>Stay updated with the latest announcements, holidays, and events.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/400x150.png?text=Library" alt="Library" />
+      <div class="card-content">
+        <h3>Library</h3>
+        <p>Search the library catalog, reserve books, and check borrowing history.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Amity University Portal. All rights reserved.
+  </footer>
+</body>
+</html>
